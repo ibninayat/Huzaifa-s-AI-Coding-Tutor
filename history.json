@@ -1,0 +1,56 @@
+[
+  {
+    "time": "2026-10-10 19:07:55",
+    "type": "execution",
+    "mode": "Run Code",
+    "language": "C++ (GCC)",
+    "level": "BSCS Semester 1–2",
+    "question": "Code execution",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    return 0;\n}",
+    "status": "Accepted",
+    "answer": "Hello, World!\n"
+  },
+  {
+    "time": "2026-10-10 19:08:35",
+    "type": "execution",
+    "mode": "Run Code",
+    "language": "C++ (GCC)",
+    "level": "BSCS Semester 1–2",
+    "question": "Code execution",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    cout<<\"what is your name bro\"<<endl;\n    return 0;\n}",
+    "status": "Accepted",
+    "answer": "Hello, World!\nwhat is your name bro\n"
+  },
+  {
+    "time": "2026-10-10 19:08:56",
+    "type": "execution",
+    "mode": "Run Code",
+    "language": "C++ (GCC)",
+    "level": "BSCS Semester 1–2",
+    "question": "Code execution",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    cout<<\"what is your name bro\"<<endl;\n    return 0;\n}",
+    "status": "Accepted",
+    "answer": "Hello, World!\nwhat is your name bro\n"
+  },
+  {
+    "time": "2026-10-10 19:10:30",
+    "type": "execution",
+    "mode": "Run Code",
+    "language": "C++ (GCC)",
+    "level": "BSCS Semester 1–2",
+    "question": "Code execution",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n        cout << \"How are you!\" << endl;\n\n    return 0;\n}",
+    "status": "Accepted",
+    "answer": "Hello, World!\nHow are you!\n"
+  },
+  {
+    "time": "2026-10-10 19:10:36",
+    "type": "tutor",
+    "mode": "Explain code",
+    "language": "C++ (GCC)",
+    "level": "BSCS Semester 1–2",
+    "question": "Please help with the code in the editor.",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n        cout << \"How are you!\" << endl;\n\n    return 0;\n}",
+    "answer": "**Program Overview**\n\nThe program is a very simple C++ “Hello, World!” program.  \nWhen it runs it prints two lines of text to the console:\n\n```\nHello, World!\nHow are you!\n```\n\nBelow is a line‑by‑line explanation of what each part of the source code does, written for a first‑year computer‑science student.\n\n---\n\n## 1. `#include <iostream>`\n\n```cpp\n#include <iostream>\n```\n\n* **What it is:** a *pre‑processor directive*.  \n* **What it does:** before the compiler actually compiles the program, the pre‑processor copies the contents of the header file `iostream` into the source file.  \n* **Why we need it:** `iostream` (short for *input‑output stream*) defines the standard objects `std::cin`, `std::cout`, `std::cerr`, and the manipulator `std::endl`. In this program we use `std::cout` to write text to the screen, so we must include this header.\n\n---\n\n## 2. `using namespace std;`\n\n```cpp\nusing namespace std;\n```\n\n* **What it is:** a *using‑directive*.  \n* **What it does:** tells the compiler that when we write a name like `cout` or `endl` we actually mean `std::cout` and `std::endl`.  \n* **Why we use it:** It saves us from typing the `std::` prefix everywhere.  \n* **Note for beginners:** In larger projects it is often better to avoid `using namespace std;` (or to limit its scope) because it can cause name clashes, but for tiny examples like this it is perfectly fine.\n\n---\n\n## 3. `int main() { … }`\n\n```cpp\nint main() {\n    // …\n    return 0;\n}\n```\n\n* **What it is:** the *entry point* of every C++ program.  \n* **Why it returns `int`:** By convention `main` returns an integer status code to the operating system.  \n  * `0` means “the program finished successfully”.  \n  * Any non‑zero value can be used to signal an error (advanced usage).  \n* **The braces `{ … }`** define the *body* of the function – everything inside them is executed when the program starts.\n\n---\n\n## 4. First output statement\n\n```cpp\ncout << \"Hello, World!\" << endl;\n```\n\n* **`cout`** – the standard *character output stream* (think of it as the screen).  \n* **`<<`** – the *insertion operator*. It sends the value on its right into the stream on its left.  \n* **`\"Hello, World!\"`** – a *string literal* (a sequence of characters).  \n* **`endl`** – a *manipulator* that does two things:\n  1. Inserts a newline character (`'\\n'`) so the next output starts on a new line.\n  2. Flushes the output buffer, forcing everything that has been written to actually appear on the screen immediately.  \n* **Result:** The text `Hello, World!` appears, followed by a line break.\n\n---\n\n## 5. Second output statement\n\n```cpp\ncout << \"How are you!\" << endl;\n```\n\nExactly the same pattern as the previous line, but prints a different string.  \nBecause we used `endl` again, the cursor moves to the next line after this text, leaving the console ready for any further output (or for the program to finish).\n\n---\n\n## 6. `return 0;`\n\n```cpp\nreturn 0;\n```\n\n* **Purpose:** tells the operating system that the program ended without errors.  \n* **Effect:** after this statement the function `main` finishes, and the program terminates.\n\n---\n\n## 7. Indentation & Formatting\n\n```cpp\nint main() {\n    cout << \"Hello, World!\" << endl;\n        cout << \"How are you!\" << endl;\n\n    return 0;\n}\n```\n\n* The code works even with the irregular indentation, but good style makes it easier to read.\n* A more conventional layout would be:\n\n```cpp\nint main() {\n    cout << \"Hello, World!\" << endl;\n    cout << \"How are you!\" << endl;\n\n    return 0;\n}\n```\n\n* Each logical block (the body of `main`) is indented the same amount, and the extra spaces before the second `cout` are removed.\n\n---\n\n## 8. What Happens When You Run It\n\n1. The program starts at `main`.\n2. `cout << \"Hello, World!\" << endl;` writes `Hello, World!` and a newline to the console.\n3. `cout << \"How are you!\" << endl;` writes `How are you!` and another newline.\n4. `return 0;` ends the program.\n5. The operating system receives the exit code `0` and reports that the program finished successfully.\n\nThe **stdout** you observed:\n\n```\nHello, World!\nHow are you!\n```\n\nmatches exactly what the two `cout` statements produce.\n\n---\n\n## 9. Quick Checklist for Similar Programs\n\n| Step | What to write | Why |\n|------|---------------|-----|\n| 1 | `#include <iostream>` | Gives access to `cout` and `endl`. |\n| 2 | `using namespace std;` (optional) | Saves typing `std::`. |\n| 3 | `int main() { … }` | Entry point of the program. |\n| 4 | `cout << \"text\" << endl;` | Prints a line of text. |\n| 5 | `return 0;` | Signals successful termination. |\n\n---\n\n### TL;DR (very short)\n\n* Include the I/O library (`iostream`).  \n* Bring the `std` namespace into scope (`using namespace std;`).  \n* Define `main`, the program’s starting function.  \n* Use `cout << \"message\" << endl;` to print each line.  \n* Return `0` to indicate success.\n\nThat’s all there is to this tiny program! Feel free to experiment by changing the strings, removing `endl` (you’ll see the output stay on the same line), or adding more `cout` statements. Happy coding!"
+  }
+]

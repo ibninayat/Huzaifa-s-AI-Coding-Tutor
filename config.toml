@@ -1,0 +1,16 @@
+[theme]
+base = "dark"
+primaryColor = "#43e0d0"
+backgroundColor = "#080d19"
+secondaryBackgroundColor = "#101a2b"
+textColor = "#edf4ff"
+font = "sans-serif"
+codeFont = "monospace"
+borderColor = "#263751"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "medium"
+buttonRadius = "medium"
+
+[server]
+headless = true
